@@ -16,7 +16,7 @@ Estoy abierto a sugerencias y mejoras.
 ## Cómo usarlo
 
 1. Clonar este repositorio:  
-   `git clone https://github.com/tu_usuario/mi-primer-sitio-web.git`
+   `git clone https://github.com/ANDERSONTELLO/mi-primer-sitio-web.git`
 
 2. Abrir `index.html` en tu navegador favorito.
 
