@@ -10,7 +10,7 @@ body {
 }
 
 body {
-  background-image: url('img/hack20.png');
+  background-image: url("img/hack20.png");
   background-size: cover;            /* La imagen cubre toda la pantalla */
   background-repeat: no-repeat;      /* No se repite */
   background-position: center center; /* Centrada */
