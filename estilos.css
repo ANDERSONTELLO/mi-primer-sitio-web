@@ -1,0 +1,140 @@
+/* FORMATO DE LETRA */
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* LOGO */
+.logo img {
+  width: 150px;
+  height: auto;
+  margin-right: 650px;
+}
+
+/* MI PRIMER SITIO WEB */
+.centrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.centrado p {
+  font-size: 48px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px #00f7ff, 0 0 10px #00f7ff, 0 0 20px #00f7ff;
+}
+
+/* BARRA SUPERIOR */
+.barra-superior {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  position: fixed;
+  top: 0;
+}
+
+/* MENÚ PRINCIPAL */
+.menu-principal {
+  text-align: right;
+}
+
+.menu-principal li {
+  display: inline-block;
+  margin-left: 70px;
+}
+
+.menu-principal a {
+  color: black;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.menu-principal li a:hover {
+  color: aqua;
+}
+
+/* SECCIÓN INFORMATIVA */
+.info-ciberseguridad {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 40px;
+  background: #1a1a1d;
+  border-left: 6px solid #00ffc3;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 255, 195, 0.1);
+  line-height: 1.8;
+}
+
+.info-ciberseguridad h2 {
+  color: #00ffc3;
+  font-size: 30px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #00ffc3;
+  padding-bottom: 10px;
+}
+
+.info-ciberseguridad p {
+  font-size: 18px;
+  color: #d0d0d0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .logo img {
+    width: 100px;
+    margin-right: 0;
+  }
+
+  .barra-superior {
+    flex-direction: column;
+    padding: 15px;
+    position: static;
+  }
+
+  .menu-principal {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .menu-principal li {
+    display: block;
+    margin: 10px 0 0 0;
+    margin-left: 0;
+  }
+
+  .centrado {
+    height: auto;
+    margin-top: 80px;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .centrado p {
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+
+  .info-ciberseguridad {
+    padding: 20px;
+    margin: 20px 10px;
+    max-width: 95%;
+  }
+}
+
+
+
+
+
+

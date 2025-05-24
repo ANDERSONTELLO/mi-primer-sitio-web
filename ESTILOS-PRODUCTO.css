@@ -1,0 +1,276 @@
+
+/* Estilos generales del cuerpo */
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* Barra superior */
+.barra-superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px 30px 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+.menu-principal {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.menu-principal li {
+  margin-left: 20px;
+  white-space: nowrap;
+}
+
+.menu-principal a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: color 0.3s ease;
+  padding: 8px 12px;
+  display: inline-block;
+}
+
+.menu-principal a:hover {
+  color: aqua;
+}
+
+/* Contenedores generales */
+.contenedor9,
+.contenedor10,
+.contenedor11,
+.contenedor12,
+.contenedor13 {
+  background: #f8f9fb;
+  border-radius: 12px;
+  margin: 30px auto;
+  max-width: 850px;
+  padding: 30px 40px;
+  transition: box-shadow 0.3s ease;
+  margin-top: 150px;
+  display: flex;
+}
+
+.contenedor9:hover,
+.contenedor10:hover,
+.contenedor11:hover,
+.contenedor12:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Texto contenido */
+.texto9,
+.texto10,
+.texto11,
+.texto12,
+.texto13 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* Títulos principales */
+.texto9 h3,
+.texto10 h3,
+.texto11 h3,
+.texto12 h3 {
+  font-size: 1.9rem;
+  color: #0d47a1;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(13, 71, 161, 0.3);
+}
+
+/* Subtítulos */
+.texto9 h4,
+.texto10 h4,
+.texto11 h4,
+.texto12 h4 {
+  font-size: 1.4rem;
+  color: #1565c0;
+  margin-top: 25px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  border-bottom: 2px solid #90caf9;
+  padding-bottom: 5px;
+}
+
+/* Párrafos */
+.texto9 p,
+.texto10 p,
+.texto11 p,
+.texto12 p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+/* Listas */
+.texto9 ul,
+.texto10 ul,
+.texto11 ul,
+.texto12 ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 25px;
+}
+
+/* Items de lista */
+.texto9 ul li,
+.texto10 ul li,
+.texto11 ul li,
+.texto12 ul li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #333;
+  border-left: 4px solid #42a5f5;
+  background: #e3f2fd;
+  border-radius: 8px;
+  padding: 12px 15px;
+  box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.7);
+  transition: background-color 0.25s ease;
+}
+
+.texto9 ul li:hover,
+.texto10 ul li:hover,
+.texto11 ul li:hover,
+.texto12 ul li:hover {
+  background-color: #bbdefb;
+  cursor: default;
+}
+
+.texto9 ul li::before,
+.texto10 ul li::before,
+.texto11 ul li::before,
+.texto12 ul li::before {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.1rem;
+  color: #1976d2;
+}
+
+/* Contenedor de soporte */
+.contenedor13 {
+  background: #e1f5fe;
+  padding: 40px 50px;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(25, 118, 210, 0.15);
+  text-align: center;
+}
+
+.texto13 h2 {
+  font-size: 2.2rem;
+  color: #0d47a1;
+  margin-bottom: 15px;
+  font-weight: 800;
+  text-shadow: 1px 1px 4px rgba(13, 71, 161, 0.3);
+}
+
+.texto13 h3 {
+  font-size: 1.6rem;
+  color: #1565c0;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.texto13 li {
+  list-style: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+/* Adaptación móvil */
+@media (max-width: 767px) {
+  .barra-superior {
+    flex-direction: column;
+    padding: 15px 20px;
+    border-radius: 0;
+  }
+
+  .logo img {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+
+  .menu-principal {
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: visible;
+    margin-top: 10px;
+  }
+
+  .menu-principal li {
+    margin-left: 10px;
+    margin-bottom: 8px;
+  }
+
+  .menu-principal a {
+    font-size: 1rem;
+    padding: 6px 10px;
+  }
+
+  .contenedor9,
+  .contenedor10,
+  .contenedor11,
+  .contenedor12,
+  .contenedor13 {
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 100px;
+    max-width: 95%;
+  }
+
+  .texto9 h3,
+  .texto10 h3,
+  .texto11 h3,
+  .texto12 h3 {
+    font-size: 1.2rem;
+  }
+
+  .texto9 ul li,
+  .texto10 ul li,
+  .texto11 ul li,
+  .texto12 ul li {
+    font-size: 1rem;
+    padding-left: 25px;
+  }
+
+  .texto9 ul li::before,
+  .texto10 ul li::before,
+  .texto11 ul li::before,
+  .texto12 ul li::before {
+    left: 5px;
+    font-size: 1rem;
+  }
+}

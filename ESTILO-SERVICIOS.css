@@ -1,0 +1,208 @@
+
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400; 
+    line-height: 1.5;
+  }
+/* Barra superior */
+.barra-superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px 30px 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+.menu-principal {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  right: 0;
+}
+
+.menu-principal li {
+  margin-left: 20px;
+  white-space: nowrap;
+}
+
+.menu-principal a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: color 0.3s ease;
+  padding: 8px 12px;
+  display: inline-block;
+}
+
+.menu-principal a:hover {
+  color: aqua;
+}
+
+/* Título principal */
+.centrado {
+  text-align: center;
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 150px;
+}
+
+/* Contenedor principal */
+.contenedor1 {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #f0f8ff;
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: 40px auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  margin-top: 150px;
+}
+
+/* Contenido */
+.contenido1 {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Texto principal */
+.texto1 h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.texto1 p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Lista de servicios */
+.texto1 ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+
+.texto1 ul li {
+  background: rgba(255, 255, 255, 0.15);
+  margin: 12px 0;
+  padding: 15px 20px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease;
+}
+
+.texto1 ul li strong {
+  color: #cce7ff;
+  flex-shrink: 0;
+}
+
+.texto1 ul li:hover {
+  background: rgba(255, 255, 255, 0.3);
+  cursor: default;
+}
+
+ul li a {
+  text-decoration: none;
+  color: azure;
+}
+
+/* Texto con énfasis */
+.texto1 em {
+  font-weight: 600;
+  color: #aad4ff;
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* Subtítulo */
+.texto1 h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .barra-superior {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 0;
+  }
+
+  .logo img {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+
+  .menu-principal {
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: visible;
+    margin-top: 10px;
+  }
+
+  .menu-principal li {
+    margin-left: 10px;
+    margin-bottom: 8px;
+  }
+
+  .menu-principal a {
+    font-size: 1rem;
+    padding: 8px 10px;
+  }
+
+  .contenedor1 {
+    margin-top: 110px;
+    max-width: 95%;
+    padding: 30px 20px;
+  }
+
+  .texto1 h1 {
+    font-size: 1.8rem;
+  }
+
+  .texto1 p,
+  .texto1 ul li {
+    font-size: 0.95rem;
+  }
+}
+
+

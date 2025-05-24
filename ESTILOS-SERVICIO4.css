@@ -1,0 +1,197 @@
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400; 
+    line-height: 1.5;
+  }
+
+  /*estilo barra superior*/
+
+ .logo img {
+  width: 150px;        
+  height: auto;
+}
+
+/* MI PRIMER SITIO WEB */
+.centrado {
+  text-align: center;
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 150px;
+}
+
+.menu-principal {
+  text-align: right;
+}
+
+/* Barra superior */
+.barra-superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px 30px 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+.menu-principal {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.menu-principal li {
+  margin-left: 20px;
+  white-space: nowrap;
+}
+
+.menu-principal a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: color 0.3s ease;
+  padding: 8px 12px;
+  display: inline-block;
+}
+
+.menu-principal a:hover {
+  color: aqua;
+}
+
+.contenedor1 {
+  margin-top: 130px;
+}
+
+/* IDS/IPS - Seguridad avanzada */
+.contenedor1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  animation: fadeInUp 1.2s ease;
+}
+
+.contenido1 {
+  background: linear-gradient(145deg, #0f172a, #1e293b);
+  border-left: 6px solid #38bdf8;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.15);
+  max-width: 960px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contenido1:hover {
+  transform: scale(1.015);
+  box-shadow: 0 0 35px rgba(56, 189, 248, 0.25);
+}
+
+.texto1 h2 {
+  font-size: 30px;
+  color: #38bdf8;
+  margin-bottom: 20px;
+  text-shadow: 0 0 6px rgba(56, 189, 248, 0.3);
+}
+
+.texto1 h4 {
+  font-size: 20px;
+  margin-top: 30px;
+  color: #fbbf24;
+  border-left: 4px solid #fbbf24;
+  padding-left: 12px;
+}
+
+.texto1 p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #e2e8f0;
+}
+
+.texto1 ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+.texto1 li {
+  font-size: 17px;
+  background-color: #1e293b;
+  padding: 12px 16px;
+  border-left: 4px solid #38bdf8;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  color: #f1f5f9;
+  transition: background-color 0.3s;
+}
+
+.texto1 li:hover {
+  background-color: #2d3748;
+}
+
+/* Animación de entrada */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Elimina margen fijo del logo */
+.logo img {
+  width: 150px;
+  height: auto;
+  margin-right: 0;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .barra-superior {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .menu-principal {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .menu-principal li {
+    margin-left: 12px;
+    margin-bottom: 8px;
+  }
+
+  .menu-principal a {
+    font-size: 16px;
+    padding: 10px 14px;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+}

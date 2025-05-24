@@ -1,0 +1,309 @@
+
+/*formato de letra*/
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400; 
+    line-height: 1.5;
+  }
+
+/*estilo barra superior*/
+
+  .logo img {
+  width: 150px;        
+  height: auto;
+  margin-right: 560px; /* ➤ espacio desde el borde derecho */
+}
+
+
+/* MI PRIMER SITIO WEB */
+.centrado {
+  text-align: center;
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 150px;
+}
+
+.menu-principal {
+  text-align: right;
+}
+
+/* Barra superior */
+      .barra-superior {
+        display: flex;
+        justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
+        align-items: center;
+        padding: 30px 60px 30px 30px; /* más espacio a la derecha */
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 20px;
+        z-index: 1000;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        box-sizing: border-box;
+      }
+
+      .logo img {
+        width: 150px;
+        height: auto;
+      }
+
+      .menu-principal {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow-x: auto; /* permite scroll horizontal si hace falta */
+        -webkit-overflow-scrolling: touch; /* suaviza scroll en móviles */
+      }
+
+      .menu-principal li {
+        margin-left: 20px; /* menos margen para que quepa todo */
+        white-space: nowrap; /* evita que las palabras se partan en varias líneas */
+      }
+
+      .menu-principal a {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        border-radius: 8px;
+        transition: color 0.3s ease;
+        padding: 8px 12px; /* para que el área clickeable sea más cómoda */
+        display: inline-block;
+      }
+
+      .menu-principal a:hover {
+        color: aqua;
+      }
+
+
+/* Título principal */
+.Tema-Seguridad {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1e88e5;
+  letter-spacing: 3px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px rgba(30, 136, 229, 0.3);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedor {
+  margin-top: 150px;
+}
+
+/* Texto introductorio debajo del título */
+.contenido_inicial {
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  font-size: 1.2rem;
+  color: #444;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+
+/* Línea horizontal decorativa */
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, #1e88e5, #42a5f5);
+  margin: 0 auto 50px auto;
+  max-width: 900px;
+  box-shadow: 0 0 8px #42a5f5;
+}
+
+/* Contenedores para cada sección temática */
+.contenedor1, .contenedor2, .contenedor3, .contenedor4 {
+  max-width: 900px;
+  margin: 0 auto 50px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(30, 136, 229, 0.15);
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 150px;
+}
+
+/* Texto dentro de cada contenedor */
+.contenido1 .texto1,
+.contenido2 .texto2,
+.contenido3 .texto3,
+.contenido4 .texto4 {
+  flex: 1;
+  color: #222;
+}
+
+/* Títulos pequeños con iconos */
+.contenido1 h3, 
+.contenido2 h3, 
+.contenido3 h3, 
+.contenido4 h3 {
+  font-size: 1.8rem;
+  color: #1565c0;
+  margin-bottom: 10px;
+  text-shadow: 0 1px 2px rgba(21, 101, 192, 0.2);
+}
+
+/* Párrafos */
+.contenido1 p,
+.contenido2 p,
+.contenido3 p,
+.contenido4 p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* Imagen en cada sección */
+.imagen1 img,
+.imagen2 img,
+.imagen3 img,
+.imagen4 img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 5px 12px rgba(30, 136, 229, 0.25);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+/* Animación suave al pasar mouse */
+.imagen1 img:hover,
+.imagen2 img:hover,
+.imagen3 img:hover,
+.imagen4 img:hover {
+  transform: scale(1.05);
+}
+
+/* Video sección */
+.video h1 {
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(30, 136, 229, 0.3);
+}
+
+/* Lista de videos en fila con espacio */
+.lista-videos {
+  max-width: 900px;
+  margin: 0 auto 60px auto;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Videos con bordes redondeados y sombra */
+.lista-videos video {
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(30, 136, 229, 0.25);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Sombra más intensa al hacer hover */
+.lista-videos video:hover {
+  box-shadow: 0 8px 30px rgba(30, 136, 229, 0.45);
+}
+
+/* Limpiar floats si se usan (aunque aquí no hay) */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 768px) {
+  /* Logo más pequeño y sin margen derecho exagerado */
+  .logo img {
+    width: 100px;
+    margin-right: 0;
+  }
+
+  /* Barra superior cambia a columna y se adapta */
+  .barra-superior {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+    position: static; /* Para evitar que quede fija y cause problemas */
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  /* Menú principal en columna, centrado y con scroll horizontal si hace falta */
+  .menu-principal {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+    margin-top: 10px;
+    justify-content: flex-start;
+  }
+
+  /* Cada botón del menú en línea, con menos margen para que quepan */
+  .menu-principal li {
+    margin-left: 10px;
+    white-space: nowrap;
+  }
+
+  /* Ajuste general para contenedores con mucho margen superior */
+  .contenedor1, .contenedor2, .contenedor3, .contenedor4 {
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  /* Imagen más pequeña y centrada */
+  .imagen1 img,
+  .imagen2 img,
+  .imagen3 img,
+  .imagen4 img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  /* Texto de los contenedores ocupa todo el ancho */
+  .contenido1 .texto1,
+  .contenido2 .texto2,
+  .contenido3 .texto3,
+  .contenido4 .texto4 {
+    flex: unset;
+  }
+
+  /* Texto introductorio más pequeño y con margen */
+  .contenido_inicial {
+    max-width: 95%;
+    font-size: 1rem;
+    margin: 0 auto 30px auto;
+  }
+
+  /* Título principal menos grande */
+  .Tema-Seguridad {
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+  }
+
+  /* Ajustes para listas de videos */
+  .lista-videos {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 95%;
+  }
+
+  /* Videos a ancho completo */
+  .lista-videos video {
+    width: 100%;
+    max-width: none;
+  }
+}

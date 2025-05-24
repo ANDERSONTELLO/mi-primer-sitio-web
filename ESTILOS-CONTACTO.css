@@ -1,0 +1,266 @@
+
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400; 
+    line-height: 1.5;
+  }
+  /*estilo barra superior*/
+
+.logo img {
+  width: 150px;        
+  height: auto;
+}
+
+/* MI PRIMER SITIO WEB */
+.centrado {
+  text-align: center;
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 150px;
+}
+
+.menu-principal {
+  text-align: right;
+}
+
+/* Barra superior */
+.barra-superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px 30px 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+.menu-principal {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.menu-principal li {
+  margin-left: 20px;
+  white-space: nowrap;
+}
+
+.menu-principal a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: color 0.3s ease;
+  padding: 8px 12px;
+  display: inline-block;
+}
+
+.menu-principal a:hover {
+  color: aqua;
+}
+
+/* Contenedor principal */
+.contenedor1 {
+  background: linear-gradient(135deg, #14202b, #1e3a59, #2e4e73);
+  color: #e0eaf1;
+  padding: 60px 25px;
+  max-width: 900px;
+  margin: 50px auto;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedor1 {
+  margin-top: 150px;
+}
+
+/* Contenido centrado */
+.contenido1 {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* Título principal */
+.texto1 h1 {
+  font-size: 3rem;
+  margin-bottom: 25px;
+  font-weight: 800;
+  text-align: center;
+  text-shadow: 3px 3px 7px rgba(0,0,0,0.6);
+  text-decoration: none;
+}
+
+/* Párrafos */
+.texto1 p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 500;
+  text-decoration: none;
+  color: #cdd9e8;
+}
+
+/* Subtítulos */
+.info-contacto h2,
+.redes-sociales h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  font-weight: 900;
+  color: #a0c8ff;
+  margin-bottom: 20px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  text-shadow: 1.5px 1.5px 5px rgba(0,0,0,0.45);
+  text-decoration: none;
+}
+
+/* Listas sin estilo */
+.info-contacto ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 auto 40px;
+  max-width: 400px;
+}
+
+/* Ítems lista de contacto */
+.info-contacto ul li {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 15px 0;
+  color: #c4d6f8;
+  text-decoration: none;
+}
+
+/* Contenedor botón WhatsApp centrado */
+.boton-whatsapp {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* Imagen WhatsApp con hover */
+.boton-whatsapp a img {
+  cursor: pointer;
+  transition: transform 0.35s ease, filter 0.35s ease;
+  text-decoration: none;
+}
+
+.boton-whatsapp a:hover img {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 8px #25d366);
+}
+
+/* Texto redes sociales */
+.redes-sociales p {
+  text-align: center;
+  font-size: 1.15rem;
+  margin-bottom: 25px;
+  color: #a9c8ff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Lista redes sociales en fila */
+.redes {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Íconos redes sociales */
+.redes li a img {
+  width: 55px;
+  height: 55px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+  filter: drop-shadow(0 0 5px rgba(0,0,0,0.3));
+  text-decoration: none;
+  border-radius: 12px;
+}
+
+/* Hover íconos */
+.redes li a:hover img {
+  transform: scale(1.25);
+  filter: drop-shadow(0 0 12px #99caff);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  /* Barra superior: menos padding y flex-wrap para que el menú baje */
+  .barra-superior {
+    flex-wrap: wrap;
+    padding: 20px 20px;
+  }
+
+  /* Logo centrado y con margen inferior para separar del menú */
+  .logo {
+    flex: 1 1 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+
+  /* Menú principal en fila pero centrado y scroll horizontal si hace falta */
+  .menu-principal {
+    flex: 1 1 100%;
+    justify-content: center;
+    overflow-x: auto;
+    padding: 5px 0;
+  }
+
+  .menu-principal li {
+    margin-left: 15px;
+    font-size: 14px;
+  }
+
+  /* Contenedor principal más estrecho y con padding menor */
+  .contenedor1 {
+    max-width: 95%;
+    padding: 40px 15px;
+    margin-top: 120px;
+  }
+
+  /* Texto centrado con tamaño un poco menor */
+  .texto1 h1 {
+    font-size: 2rem;
+  }
+
+  .texto1 p {
+    font-size: 1rem;
+  }
+
+  /* Redes sociales más pequeñas y con menos espacio entre íconos */
+  .redes li a img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .redes {
+    gap: 25px;
+  }
+}

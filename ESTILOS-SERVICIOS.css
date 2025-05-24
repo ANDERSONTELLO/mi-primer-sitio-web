@@ -1,0 +1,14 @@
+/* Título: SERVICIOS*/
+  .servicios {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color:aqua;
+  background-blend-mode: difference;
+  box-shadow: 0 4px 8px rgba(5, 2, 4, 3.3);
+  color:  black;
+  margin: 0 auto 30px auto;  /* centrado horizontal y espacio abajo */
+  display: inline-block;     /* solo ocupa lo necesario */
+  text-align: center;        /* centra el texto */
+  margin-bottom: 100px;
+
+  }
