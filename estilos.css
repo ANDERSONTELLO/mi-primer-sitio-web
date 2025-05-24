@@ -9,6 +9,17 @@ body {
   line-height: 1.5;
 }
 
+body {
+  background-image: url('img/hack20.png');
+  background-size: cover;            /* La imagen cubre toda la pantalla */
+  background-repeat: no-repeat;      /* No se repite */
+  background-position: center center; /* Centrada */
+  background-attachment: fixed;      /* Fondo fijo, no se mueve con scroll */
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;                  /* Evita scroll */
+}
+
 /* LOGO */
 .logo img {
   width: 150px;
